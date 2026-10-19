@@ -1,0 +1,12 @@
+{
+  "name": "mirax-ai-vercel",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Mirax image-to-image app for Vercel with protected serverless API routes",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "check": "node --check api/generate.js && node --check api/templates.js && node --check api/health.js && node --check lib/common.js && node --check public/app.js",
+    "test": "node --test test/*.test.js"
+  }
+}
